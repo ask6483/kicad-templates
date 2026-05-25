@@ -1,7 +1,7 @@
 (kicad_wks
 	(version 20231118)
 	(generator "pl_editor")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(setup
 		(textsize 1.5 1.5)
 		(linewidth 0.15)
@@ -85,40 +85,39 @@
 		(repeat 100)
 		(incry 50)
 	)
-	(tbtext "Date: ${ISSUE_DATE}"
+	(tbtext "Date: ${BUILD_DATE} ${BUILD_TIME}"
 		(name "")
-		(pos 104.0002 7.9002)
+		(pos 113.0002 7.9002)
 	)
 	(tbtext "Version: ${REVISION}"
 		(name "")
-		(pos 104.0002 15.9002)
+		(pos 113.0002 15.9002)
 		(font bold)
 	)
 	(tbtext "Size: ${PAPER}"
 		(name "")
-		(pos 123.0002 7.9002)
+		(pos 126.0002 7.9002)
 		(comment "Paper format name")
 	)
 	(tbtext "Page: ${#}/${##}"
 		(name "")
-		(pos 142.0002 8.1002)
+		(pos 146.0002 8.1002)
 		(comment "Sheet id")
 	)
-	(tbtext "Title: ${TITLE}${SHEETPATH}"
+	(tbtext "Title: ${PROJ_TITLE} ${SHEETPATH}"
 		(name "")
-		(pos 142.0002 20.7002)
+		(pos 146.0002 20.7002)
 		(font
 			(size 2 2) bold italic)
 	)
 	(tbtext "${COMMENT1}"
 		(name "")
-		(pos 142.0002 15.0002)
-		(comment "Company name")
+		(pos 146.0002 15.0002)
 	)
 	(rect
 		(name "")
 		(start 1.9892 2.0072)
-		(end 143.0022 23.0072)
+		(end 147.0022 23.0072)
 	)
 	(line
 		(name "")
@@ -127,7 +126,7 @@
 	)
 	(line
 		(name "")
-		(start 143.0022 18.0072)
+		(start 147.0022 18.0072)
 		(end 48.0022 18.0072)
 	)
 	(line
@@ -139,10 +138,6 @@
 		(name "")
 		(start 89.9892 10.0022)
 		(end 48.0022 10.0072)
-	)
-	(tbtext "Variant: ${VARIANT}"
-		(name "")
-		(pos 103.9892 12.0022)
 	)
 	(tbtext "Created by:\n${AUTHOR}"
 		(name "")
@@ -159,38 +154,37 @@
 	)
 	(line
 		(name "")
-		(start 143.0022 6.0072)
+		(start 147.0022 6.0072)
 		(end 76.0022 6.0072)
 	)
 	(line
 		(name "")
-		(start 123.9892 10.0022)
-		(end 123.9892 6.0022)
+		(start 126.9892 10.0022)
+		(end 126.9892 6.0022)
 	)
 	(tbtext "File: ${FILENAME}"
 		(name "")
-		(pos 141.9892 4.0022)
+		(pos 145.9892 4.0022)
 		(comment "Paper format name")
 	)
 	(line
 		(name "")
-		(start 104.9892 6.0022)
-		(end 104.9892 10.0022)
+		(start 113.9892 6.0022)
+		(end 114.0022 10.0072)
 	)
 	(line
 		(name "")
-		(start 104.9892 10.0022)
-		(end 104.9892 18.0022)
+		(start 113.9892 10.0022)
+		(end 113.9892 18.0022)
 	)
-	(tbtext "${COMMENT2}"
+	(tbtext "${COMPANY}"
 		(name "")
-		(pos 24.989 5.0022)
+		(pos 24.989 5.002)
 		(justify center)
-		(comment "Paper format name")
 	)
 	(line
 		(name "")
-		(start 105.0022 14.0072)
+		(start 114.0022 14.0072)
 		(end 76.0022 14.0072)
 	)
 	(bitmap
@@ -618,6 +612,10 @@
 	(line
 		(name "")
 		(start 105.0022 10.0072)
-		(end 143.0022 10.0072)
+		(end 147.0022 10.0072)
+	)
+	(tbtext "Variant: ${VARIANT_NAME}"
+		(name "")
+		(pos 113.002 12.007)
 	)
 )
